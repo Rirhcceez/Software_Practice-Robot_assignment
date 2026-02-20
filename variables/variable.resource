@@ -24,3 +24,4 @@ ${MENU_ITEM}                menuitem-
 
 ${NOTE_BOX}                 input_comp-lt33fct3
 ${ACCEPT_CHECKBOX}          cCdhN7
+${SUBMIT_BUTTON}            comp-lt33fctj

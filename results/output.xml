@@ -1,193 +1,2255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.19 on win32)" generated="20260220 16:31:44.571" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.19 on win32)" generated="20260220 18:46:44.301" rpa="false" schemaversion="4">
 <suite id="s1" name="Testcase" source="C:\Users\Rirhc\QA\Software_Practice-Robot_assignment\tests\testcase.robot">
-<test id="s1-t1" name="Verify registration form with all input field" line="12">
+<test id="s1-t1" name="Verify registration form with all input field" line="13">
 <kw name="Open Browser and Maximize" library="keyword" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20260220 16:31:45.180" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
-<status status="PASS" starttime="20260220 16:31:45.180" endtime="20260220 16:31:48.357"/>
+<msg timestamp="20260220 18:46:44.979" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:46:44.979" endtime="20260220 18:46:47.951"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20260220 16:31:48.359" endtime="20260220 16:31:48.415"/>
+<status status="PASS" starttime="20260220 18:46:47.953" endtime="20260220 18:46:47.994"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20260220 16:31:53.417" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20260220 16:31:48.415" endtime="20260220 16:31:53.417"/>
+<msg timestamp="20260220 18:46:50.000" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:46:47.994" endtime="20260220 18:46:50.000"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:45.180" endtime="20260220 16:31:53.418"/>
+<status status="PASS" starttime="20260220 18:46:44.979" endtime="20260220 18:46:50.000"/>
 </kw>
-<kw name="Input FirstName" library="keyword">
+<kw name="Input Valid FirstName" library="input">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=${FNAME_BOX}</arg>
 <arg>${FIRSTNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:53.421" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
-<status status="PASS" starttime="20260220 16:31:53.420" endtime="20260220 16:31:53.560"/>
+<msg timestamp="20260220 18:46:50.000" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
+<status status="PASS" starttime="20260220 18:46:50.000" endtime="20260220 18:46:50.171"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:53.419" endtime="20260220 16:31:53.562"/>
+<status status="PASS" starttime="20260220 18:46:50.000" endtime="20260220 18:46:50.171"/>
 </kw>
-<kw name="Input LastName" library="keyword">
+<kw name="Input Valid LastName" library="input">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=${LNAME_BOX}</arg>
 <arg>${LASTNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:53.564" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
-<status status="PASS" starttime="20260220 16:31:53.563" endtime="20260220 16:31:53.703"/>
+<msg timestamp="20260220 18:46:50.172" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
+<status status="PASS" starttime="20260220 18:46:50.172" endtime="20260220 18:46:50.283"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:53.562" endtime="20260220 16:31:53.703"/>
+<status status="PASS" starttime="20260220 18:46:50.171" endtime="20260220 18:46:50.283"/>
 </kw>
-<kw name="Input Phone" library="keyword">
+<kw name="Input Valid Phone" library="input">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=${PHONE_BOX}</arg>
 <arg>${PHONE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:53.708" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
-<status status="PASS" starttime="20260220 16:31:53.703" endtime="20260220 16:31:53.861"/>
+<msg timestamp="20260220 18:46:50.286" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
+<status status="PASS" starttime="20260220 18:46:50.285" endtime="20260220 18:46:50.410"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:53.703" endtime="20260220 16:31:53.861"/>
+<status status="PASS" starttime="20260220 18:46:50.284" endtime="20260220 18:46:50.410"/>
 </kw>
-<kw name="Input Email" library="keyword">
+<kw name="Input Valid Email" library="input">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=${EMAIL_BOX}</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:53.869" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
-<status status="PASS" starttime="20260220 16:31:53.861" endtime="20260220 16:31:54.037"/>
+<msg timestamp="20260220 18:46:50.413" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
+<status status="PASS" starttime="20260220 18:46:50.412" endtime="20260220 18:46:50.560"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:53.861" endtime="20260220 16:31:54.037"/>
+<status status="PASS" starttime="20260220 18:46:50.411" endtime="20260220 18:46:50.560"/>
 </kw>
-<kw name="Input Number of Adult" library="keyword">
-<arg>0</arg>
+<kw name="Input Valid Number of Adult" library="input">
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>id=${NUMBER_OF_ADULT_BOX}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20260220 16:31:54.044" endtime="20260220 16:31:54.324"/>
+<status status="PASS" starttime="20260220 18:46:50.561" endtime="20260220 18:46:50.841"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=${NUMBER_OF_ADULT_BOX}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:54.324" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.324" endtime="20260220 16:31:54.418"/>
+<msg timestamp="20260220 18:46:50.841" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
+<status status="PASS" starttime="20260220 18:46:50.841" endtime="20260220 18:46:50.925"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>id=${MENU_ITEM_BOX}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20260220 16:31:54.419" endtime="20260220 16:31:54.445"/>
+<status status="PASS" starttime="20260220 18:46:50.925" endtime="20260220 18:46:50.948"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id=${MENU_ITEM}${amount}</arg>
+<arg>id=${MENU_ITEM}${NUMBER_OF_ADULT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:54.446" level="INFO">Clicking element 'id=menuitem-0'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.445" endtime="20260220 16:31:54.521"/>
+<msg timestamp="20260220 18:46:50.949" level="INFO">Clicking element 'id=menuitem-2'.</msg>
+<status status="PASS" starttime="20260220 18:46:50.949" endtime="20260220 18:46:51.017"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:54.037" endtime="20260220 16:31:54.521"/>
+<status status="PASS" starttime="20260220 18:46:50.561" endtime="20260220 18:46:51.017"/>
 </kw>
-<kw name="Input Pet Yes" library="keyword">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:54.521" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.521" endtime="20260220 16:31:54.603"/>
-</kw>
-<status status="PASS" starttime="20260220 16:31:54.521" endtime="20260220 16:31:54.603"/>
-</kw>
-<kw name="Input Note" library="keyword">
+<kw name="Input Note" library="input">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=${NOTE_BOX}</arg>
 <arg>${NOTE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:54.603" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.603" endtime="20260220 16:31:54.706"/>
+<msg timestamp="20260220 18:46:51.017" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.017" endtime="20260220 18:46:51.121"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:54.603" endtime="20260220 16:31:54.706"/>
+<status status="PASS" starttime="20260220 18:46:51.017" endtime="20260220 18:46:51.121"/>
 </kw>
-<kw name="Input Accept" library="keyword">
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.125" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.124" endtime="20260220 18:46:51.203"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.121" endtime="20260220 18:46:51.203"/>
+</kw>
+<kw name="Click Accept" library="input">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class=${ACCEPT_CHECKBOX}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20260220 16:31:54.711" level="INFO">Clicking element 'class=cCdhN7'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.710" endtime="20260220 16:31:54.787"/>
+<msg timestamp="20260220 18:46:51.203" level="INFO">Clicking element 'class=cCdhN7'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.203" endtime="20260220 18:46:51.283"/>
 </kw>
-<status status="PASS" starttime="20260220 16:31:54.706" endtime="20260220 16:31:54.787"/>
+<status status="PASS" starttime="20260220 18:46:51.203" endtime="20260220 18:46:51.284"/>
 </kw>
-<kw name="Verify FirstName Input Is Correct" library="check">
-<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.286" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.285" endtime="20260220 18:46:51.375"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.284" endtime="20260220 18:46:51.375"/>
+</kw>
+<kw name="Check FirstName is Valid" library="check">
+<kw name="Text Checker" library="check">
 <arg>${FNAME_BOX}</arg>
 <arg>${FIRSTNAME}</arg>
-<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20260220 16:31:54.810" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.787" endtime="20260220 16:31:54.810"/>
-</kw>
-<status status="PASS" starttime="20260220 16:31:54.787" endtime="20260220 16:31:54.810"/>
-</kw>
-<kw name="Verify LastName Input Is Correct" library="check">
+<arg>false</arg>
 <kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:46:51.427" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.383" endtime="20260220 18:46:51.427"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.450" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:46:51.427" endtime="20260220 18:46:51.450"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:46:51.450" endtime="20260220 18:46:51.450"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.383" endtime="20260220 18:46:51.450"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.383" endtime="20260220 18:46:51.450"/>
+</kw>
+<kw name="Check LastName is Valid" library="check">
+<kw name="Text Checker" library="check">
 <arg>${LNAME_BOX}</arg>
 <arg>${LASTNAME}</arg>
-<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20260220 16:31:54.836" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.818" endtime="20260220 16:31:54.836"/>
-</kw>
-<status status="PASS" starttime="20260220 16:31:54.818" endtime="20260220 16:31:54.836"/>
-</kw>
-<kw name="Verify Phone Input Is Correct" library="check">
+<arg>false</arg>
 <kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:46:51.483" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.450" endtime="20260220 18:46:51.483"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.499" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:46:51.483" endtime="20260220 18:46:51.499"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:46:51.499" endtime="20260220 18:46:51.499"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.450" endtime="20260220 18:46:51.499"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.450" endtime="20260220 18:46:51.499"/>
+</kw>
+<kw name="Check Phone is Valid" library="check">
+<kw name="Text Checker" library="check">
 <arg>${PHONE_BOX}</arg>
 <arg>${PHONE}</arg>
-<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20260220 16:31:54.864" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.836" endtime="20260220 16:31:54.864"/>
-</kw>
-<status status="PASS" starttime="20260220 16:31:54.836" endtime="20260220 16:31:54.864"/>
-</kw>
-<kw name="Verify Email Input Is Correct" library="check">
+<arg>false</arg>
 <kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:46:51.525" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.499" endtime="20260220 18:46:51.525"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.549" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:46:51.525" endtime="20260220 18:46:51.549"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:46:51.550" endtime="20260220 18:46:51.550"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.499" endtime="20260220 18:46:51.551"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.499" endtime="20260220 18:46:51.551"/>
+</kw>
+<kw name="Check Email is Valid" library="check">
+<kw name="Text Checker" library="check">
 <arg>${EMAIL_BOX}</arg>
 <arg>${EMAIL}</arg>
-<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20260220 16:31:54.883" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
-<status status="PASS" starttime="20260220 16:31:54.864" endtime="20260220 16:31:54.883"/>
-</kw>
-<status status="PASS" starttime="20260220 16:31:54.864" endtime="20260220 16:31:54.883"/>
-</kw>
-<kw name="Verify Number of Adult Input Is Correct" library="check">
+<arg>false</arg>
 <kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:46:51.575" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
+<status status="PASS" starttime="20260220 18:46:51.552" endtime="20260220 18:46:51.575"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.591" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:46:51.575" endtime="20260220 18:46:51.591"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:46:51.599" endtime="20260220 18:46:51.600"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.552" endtime="20260220 18:46:51.600"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.551" endtime="20260220 18:46:51.600"/>
+</kw>
+<kw name="Check Number of Adult is Valid" library="check">
+<kw name="Dropdown Checker" library="check">
 <arg>${NUMBER_OF_ADULT_BOX}</arg>
 <arg>${NUMBER_OF_ADULT}</arg>
-<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20260220 16:31:55.099" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20260220 16:31:55.099" level="FAIL">Text field with locator 'collection_comp-lt33fcsl1' not found.</msg>
-<status status="FAIL" starttime="20260220 16:31:54.883" endtime="20260220 16:31:55.104"/>
+<arg>false</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.633" level="INFO">${text} = 1
+2
+3
+4
+5
+More</msg>
+<status status="PASS" starttime="20260220 18:46:51.603" endtime="20260220 18:46:51.633"/>
 </kw>
-<status status="FAIL" starttime="20260220 16:31:54.883" endtime="20260220 16:31:55.104"/>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20260220 18:46:51.633" endtime="20260220 18:46:51.634"/>
 </kw>
-<kw name="Verify Note Input Is Correct" library="check">
-<status status="NOT RUN" starttime="20260220 16:31:55.105" endtime="20260220 16:31:55.105"/>
+<status status="PASS" starttime="20260220 18:46:51.602" endtime="20260220 18:46:51.634"/>
+</branch>
+<status status="PASS" starttime="20260220 18:46:51.602" endtime="20260220 18:46:51.634"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:46:51.654" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:46:51.634" endtime="20260220 18:46:51.654"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:46:51.655" endtime="20260220 18:46:51.655"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.601" endtime="20260220 18:46:51.655"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.601" endtime="20260220 18:46:51.655"/>
+</kw>
+<kw name="Check Accept is Valid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20260220 18:46:51.657" level="INFO">Verifying checkbox 'class=cCdhN7' is selected.</msg>
+<status status="PASS" starttime="20260220 18:46:51.657" endtime="20260220 18:46:51.807"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.657" endtime="20260220 18:46:51.807"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:46:51.807" endtime="20260220 18:46:51.807"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:46:51.807" endtime="20260220 18:46:51.807"/>
+</branch>
+<status status="PASS" starttime="20260220 18:46:51.657" endtime="20260220 18:46:51.807"/>
+</if>
+<status status="PASS" starttime="20260220 18:46:51.656" endtime="20260220 18:46:51.807"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:51.656" endtime="20260220 18:46:51.807"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:46:52.814" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:46:51.807" endtime="20260220 18:46:52.814"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20260220 16:31:55.105" endtime="20260220 16:31:57.376"/>
+<status status="PASS" starttime="20260220 18:46:52.814" endtime="20260220 18:46:55.096"/>
 </kw>
 <tag>Happy Case</tag>
-<status status="FAIL" starttime="20260220 16:31:45.180" endtime="20260220 16:31:57.376">Text field with locator 'collection_comp-lt33fcsl1' not found.</status>
+<status status="PASS" starttime="20260220 18:46:44.979" endtime="20260220 18:46:55.096"/>
 </test>
-<status status="FAIL" starttime="20260220 16:31:44.571" endtime="20260220 16:31:57.376"/>
+<test id="s1-t2" name="Verify registration form with invalid &quot;FirstName&quot; field" line="36">
+<kw name="Open Browser and Maximize" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260220 18:46:55.102" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:46:55.100" endtime="20260220 18:46:58.087"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260220 18:46:58.088" endtime="20260220 18:46:58.131"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:00.142" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:46:58.134" endtime="20260220 18:47:00.142"/>
+</kw>
+<status status="PASS" starttime="20260220 18:46:55.098" endtime="20260220 18:47:00.142"/>
+</kw>
+<kw name="Input Valid LastName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:00.144" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
+<status status="PASS" starttime="20260220 18:47:00.144" endtime="20260220 18:47:00.298"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:00.142" endtime="20260220 18:47:00.298"/>
+</kw>
+<kw name="Input Valid Phone" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:00.300" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
+<status status="PASS" starttime="20260220 18:47:00.299" endtime="20260220 18:47:00.455"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:00.299" endtime="20260220 18:47:00.455"/>
+</kw>
+<kw name="Input Valid Email" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:00.458" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
+<status status="PASS" starttime="20260220 18:47:00.457" endtime="20260220 18:47:00.642"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:00.456" endtime="20260220 18:47:00.642"/>
+</kw>
+<kw name="Input Valid Number of Adult" library="input">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20260220 18:47:00.644" endtime="20260220 18:47:00.936"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:00.936" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
+<status status="PASS" starttime="20260220 18:47:00.936" endtime="20260220 18:47:01.036"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM_BOX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20260220 18:47:01.036" endtime="20260220 18:47:01.066"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM}${NUMBER_OF_ADULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.068" level="INFO">Clicking element 'id=menuitem-2'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.066" endtime="20260220 18:47:01.148"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:00.643" endtime="20260220 18:47:01.148"/>
+</kw>
+<kw name="Input Note" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${NOTE_BOX}</arg>
+<arg>${NOTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.150" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.149" endtime="20260220 18:47:01.252"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.149" endtime="20260220 18:47:01.252"/>
+</kw>
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.254" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.252" endtime="20260220 18:47:01.328"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.252" endtime="20260220 18:47:01.328"/>
+</kw>
+<kw name="Click Accept" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${ACCEPT_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.331" level="INFO">Clicking element 'class=cCdhN7'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.330" endtime="20260220 18:47:01.406"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.330" endtime="20260220 18:47:01.406"/>
+</kw>
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.409" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.408" endtime="20260220 18:47:01.493"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.407" endtime="20260220 18:47:01.495"/>
+</kw>
+<kw name="Check FirstName is Invalid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${FNAME_BOX}</arg>
+<arg>${EMPTY}</arg>
+<arg>true</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:01.541" level="INFO">Content of text field 'input_comp-lt33fcq41' is ''.</msg>
+<status status="PASS" starttime="20260220 18:47:01.499" endtime="20260220 18:47:01.543"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.575" level="INFO">${result} = true</msg>
+<status status="PASS" starttime="20260220 18:47:01.543" endtime="20260220 18:47:01.575"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:01.575" endtime="20260220 18:47:01.577"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.497" endtime="20260220 18:47:01.577"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.495" endtime="20260220 18:47:01.577"/>
+</kw>
+<kw name="Check LastName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:01.613" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.579" endtime="20260220 18:47:01.613"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.631" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:01.615" endtime="20260220 18:47:01.631"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:01.631" endtime="20260220 18:47:01.633"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.579" endtime="20260220 18:47:01.633"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.577" endtime="20260220 18:47:01.633"/>
+</kw>
+<kw name="Check Phone is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:01.661" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.635" endtime="20260220 18:47:01.661"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.675" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:01.661" endtime="20260220 18:47:01.675"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:01.677" endtime="20260220 18:47:01.677"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.633" endtime="20260220 18:47:01.677"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.633" endtime="20260220 18:47:01.677"/>
+</kw>
+<kw name="Check Email is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:01.705" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:01.679" endtime="20260220 18:47:01.705"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.721" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:01.707" endtime="20260220 18:47:01.721"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:01.723" endtime="20260220 18:47:01.723"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.679" endtime="20260220 18:47:01.723"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.677" endtime="20260220 18:47:01.723"/>
+</kw>
+<kw name="Check Number of Adult is Valid" library="check">
+<kw name="Dropdown Checker" library="check">
+<arg>${NUMBER_OF_ADULT_BOX}</arg>
+<arg>${NUMBER_OF_ADULT}</arg>
+<arg>false</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.753" level="INFO">${text} = 1
+2
+3
+4
+5
+More</msg>
+<status status="PASS" starttime="20260220 18:47:01.727" endtime="20260220 18:47:01.753"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20260220 18:47:01.753" endtime="20260220 18:47:01.753"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.725" endtime="20260220 18:47:01.753"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:01.725" endtime="20260220 18:47:01.753"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:01.769" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:01.753" endtime="20260220 18:47:01.769"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:01.769" endtime="20260220 18:47:01.769"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.725" endtime="20260220 18:47:01.771"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.723" endtime="20260220 18:47:01.771"/>
+</kw>
+<kw name="Check Accept is Valid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20260220 18:47:01.773" level="INFO">Verifying checkbox 'class=cCdhN7' is selected.</msg>
+<status status="PASS" starttime="20260220 18:47:01.771" endtime="20260220 18:47:01.807"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.771" endtime="20260220 18:47:01.809"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:01.809" endtime="20260220 18:47:01.809"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:01.809" endtime="20260220 18:47:01.809"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:01.771" endtime="20260220 18:47:01.809"/>
+</if>
+<status status="PASS" starttime="20260220 18:47:01.771" endtime="20260220 18:47:01.809"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:01.771" endtime="20260220 18:47:01.809"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:02.810" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:47:01.809" endtime="20260220 18:47:02.810"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20260220 18:47:02.812" endtime="20260220 18:47:05.028"/>
+</kw>
+<tag>Unhappy Case</tag>
+<status status="PASS" starttime="20260220 18:46:55.098" endtime="20260220 18:47:05.030"/>
+</test>
+<test id="s1-t3" name="Verify registration form with invalid &quot;LastName&quot; field" line="59">
+<kw name="Open Browser and Maximize" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260220 18:47:05.034" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:05.032" endtime="20260220 18:47:07.901"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260220 18:47:07.901" endtime="20260220 18:47:07.943"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:09.944" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:47:07.943" endtime="20260220 18:47:09.944"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:05.032" endtime="20260220 18:47:09.944"/>
+</kw>
+<kw name="Input Valid FirstName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:09.946" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
+<status status="PASS" starttime="20260220 18:47:09.946" endtime="20260220 18:47:10.068"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:09.944" endtime="20260220 18:47:10.068"/>
+</kw>
+<kw name="Input Valid Phone" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:10.070" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
+<status status="PASS" starttime="20260220 18:47:10.069" endtime="20260220 18:47:10.212"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:10.068" endtime="20260220 18:47:10.212"/>
+</kw>
+<kw name="Input Valid Email" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:10.215" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
+<status status="PASS" starttime="20260220 18:47:10.213" endtime="20260220 18:47:10.373"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:10.213" endtime="20260220 18:47:10.373"/>
+</kw>
+<kw name="Input Valid Number of Adult" library="input">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20260220 18:47:10.374" endtime="20260220 18:47:10.666"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:10.668" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
+<status status="PASS" starttime="20260220 18:47:10.666" endtime="20260220 18:47:10.754"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM_BOX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20260220 18:47:10.754" endtime="20260220 18:47:10.781"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM}${NUMBER_OF_ADULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:10.783" level="INFO">Clicking element 'id=menuitem-2'.</msg>
+<status status="PASS" starttime="20260220 18:47:10.782" endtime="20260220 18:47:10.861"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:10.374" endtime="20260220 18:47:10.861"/>
+</kw>
+<kw name="Input Note" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${NOTE_BOX}</arg>
+<arg>${NOTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:10.863" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:47:10.862" endtime="20260220 18:47:10.967"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:10.862" endtime="20260220 18:47:10.967"/>
+</kw>
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:10.970" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:47:10.969" endtime="20260220 18:47:11.057"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:10.967" endtime="20260220 18:47:11.057"/>
+</kw>
+<kw name="Click Accept" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${ACCEPT_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.059" level="INFO">Clicking element 'class=cCdhN7'.</msg>
+<status status="PASS" starttime="20260220 18:47:11.059" endtime="20260220 18:47:11.136"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.059" endtime="20260220 18:47:11.136"/>
+</kw>
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.139" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:47:11.137" endtime="20260220 18:47:11.225"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.137" endtime="20260220 18:47:11.225"/>
+</kw>
+<kw name="Check FirstName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:11.268" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
+<status status="PASS" starttime="20260220 18:47:11.228" endtime="20260220 18:47:11.270"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.292" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:11.270" endtime="20260220 18:47:11.292"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:11.294" endtime="20260220 18:47:11.294"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.228" endtime="20260220 18:47:11.294"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.226" endtime="20260220 18:47:11.294"/>
+</kw>
+<kw name="Check LastName is Invalid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${LNAME_BOX}</arg>
+<arg>${EMPTY}</arg>
+<arg>true</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:11.330" level="INFO">Content of text field 'input_comp-lt33fcs1' is ''.</msg>
+<status status="PASS" starttime="20260220 18:47:11.298" endtime="20260220 18:47:11.330"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.350" level="INFO">${result} = true</msg>
+<status status="PASS" starttime="20260220 18:47:11.330" endtime="20260220 18:47:11.350"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:11.350" endtime="20260220 18:47:11.350"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.296" endtime="20260220 18:47:11.350"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.296" endtime="20260220 18:47:11.350"/>
+</kw>
+<kw name="Check Phone is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:11.382" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
+<status status="PASS" starttime="20260220 18:47:11.352" endtime="20260220 18:47:11.382"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.398" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:11.382" endtime="20260220 18:47:11.398"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:11.398" endtime="20260220 18:47:11.398"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.352" endtime="20260220 18:47:11.398"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.352" endtime="20260220 18:47:11.398"/>
+</kw>
+<kw name="Check Email is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:11.428" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:11.400" endtime="20260220 18:47:11.428"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.444" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:11.428" endtime="20260220 18:47:11.444"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:11.446" endtime="20260220 18:47:11.446"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.400" endtime="20260220 18:47:11.446"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.400" endtime="20260220 18:47:11.446"/>
+</kw>
+<kw name="Check Number of Adult is Valid" library="check">
+<kw name="Dropdown Checker" library="check">
+<arg>${NUMBER_OF_ADULT_BOX}</arg>
+<arg>${NUMBER_OF_ADULT}</arg>
+<arg>false</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.476" level="INFO">${text} = 1
+2
+3
+4
+5
+More</msg>
+<status status="PASS" starttime="20260220 18:47:11.450" endtime="20260220 18:47:11.476"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20260220 18:47:11.476" endtime="20260220 18:47:11.476"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.448" endtime="20260220 18:47:11.476"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:11.448" endtime="20260220 18:47:11.476"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:11.490" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:11.476" endtime="20260220 18:47:11.490"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:11.490" endtime="20260220 18:47:11.490"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.446" endtime="20260220 18:47:11.492"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.446" endtime="20260220 18:47:11.492"/>
+</kw>
+<kw name="Check Accept is Valid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20260220 18:47:11.494" level="INFO">Verifying checkbox 'class=cCdhN7' is selected.</msg>
+<status status="PASS" starttime="20260220 18:47:11.494" endtime="20260220 18:47:11.526"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.492" endtime="20260220 18:47:11.528"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:11.528" endtime="20260220 18:47:11.528"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:11.528" endtime="20260220 18:47:11.528"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:11.492" endtime="20260220 18:47:11.528"/>
+</if>
+<status status="PASS" starttime="20260220 18:47:11.492" endtime="20260220 18:47:11.528"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:11.492" endtime="20260220 18:47:11.528"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:12.533" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:47:11.528" endtime="20260220 18:47:12.533"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20260220 18:47:12.535" endtime="20260220 18:47:14.776"/>
+</kw>
+<tag>Unhappy Case</tag>
+<status status="PASS" starttime="20260220 18:47:05.030" endtime="20260220 18:47:14.776"/>
+</test>
+<test id="s1-t4" name="Verify registration form with invalid &quot;Phone&quot; field" line="82">
+<kw name="Open Browser and Maximize" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260220 18:47:14.780" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:14.780" endtime="20260220 18:47:17.857"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260220 18:47:17.857" endtime="20260220 18:47:17.925"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:19.935" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:47:17.925" endtime="20260220 18:47:19.935"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:14.780" endtime="20260220 18:47:19.935"/>
+</kw>
+<kw name="Input Valid FirstName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:19.939" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
+<status status="PASS" starttime="20260220 18:47:19.937" endtime="20260220 18:47:20.076"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:19.935" endtime="20260220 18:47:20.076"/>
+</kw>
+<kw name="Input Valid LastName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.078" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.077" endtime="20260220 18:47:20.181"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:20.076" endtime="20260220 18:47:20.181"/>
+</kw>
+<kw name="Input Valid Email" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.184" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.183" endtime="20260220 18:47:20.325"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:20.181" endtime="20260220 18:47:20.326"/>
+</kw>
+<kw name="Input Valid Number of Adult" library="input">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20260220 18:47:20.327" endtime="20260220 18:47:20.614"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.616" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.616" endtime="20260220 18:47:20.710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM_BOX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20260220 18:47:20.710" endtime="20260220 18:47:20.736"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM}${NUMBER_OF_ADULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.737" level="INFO">Clicking element 'id=menuitem-2'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.736" endtime="20260220 18:47:20.813"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:20.326" endtime="20260220 18:47:20.813"/>
+</kw>
+<kw name="Input Note" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${NOTE_BOX}</arg>
+<arg>${NOTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.817" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.815" endtime="20260220 18:47:20.921"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:20.813" endtime="20260220 18:47:20.921"/>
+</kw>
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.923" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.923" endtime="20260220 18:47:20.995"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:20.921" endtime="20260220 18:47:20.995"/>
+</kw>
+<kw name="Click Accept" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${ACCEPT_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:20.998" level="INFO">Clicking element 'class=cCdhN7'.</msg>
+<status status="PASS" starttime="20260220 18:47:20.998" endtime="20260220 18:47:21.077"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:20.995" endtime="20260220 18:47:21.077"/>
+</kw>
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.079" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:47:21.077" endtime="20260220 18:47:21.163"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.077" endtime="20260220 18:47:21.163"/>
+</kw>
+<kw name="Check FirstName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:21.210" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
+<status status="PASS" starttime="20260220 18:47:21.166" endtime="20260220 18:47:21.210"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.234" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:21.210" endtime="20260220 18:47:21.234"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:21.234" endtime="20260220 18:47:21.234"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.164" endtime="20260220 18:47:21.234"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.164" endtime="20260220 18:47:21.234"/>
+</kw>
+<kw name="Check LastName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:21.268" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
+<status status="PASS" starttime="20260220 18:47:21.236" endtime="20260220 18:47:21.268"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.285" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:21.268" endtime="20260220 18:47:21.285"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:21.285" endtime="20260220 18:47:21.285"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.236" endtime="20260220 18:47:21.285"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.236" endtime="20260220 18:47:21.285"/>
+</kw>
+<kw name="Check Phone is Invalid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${PHONE_BOX}</arg>
+<arg>${EMPTY}</arg>
+<arg>true</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:21.313" level="INFO">Content of text field 'input_comp-lt33fcsi1' is ''.</msg>
+<status status="PASS" starttime="20260220 18:47:21.287" endtime="20260220 18:47:21.313"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.333" level="INFO">${result} = true</msg>
+<status status="PASS" starttime="20260220 18:47:21.313" endtime="20260220 18:47:21.333"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:21.333" endtime="20260220 18:47:21.333"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.287" endtime="20260220 18:47:21.333"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.285" endtime="20260220 18:47:21.333"/>
+</kw>
+<kw name="Check Email is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:21.361" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:21.335" endtime="20260220 18:47:21.363"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.380" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:21.363" endtime="20260220 18:47:21.380"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:21.380" endtime="20260220 18:47:21.380"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.335" endtime="20260220 18:47:21.380"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.335" endtime="20260220 18:47:21.380"/>
+</kw>
+<kw name="Check Number of Adult is Valid" library="check">
+<kw name="Dropdown Checker" library="check">
+<arg>${NUMBER_OF_ADULT_BOX}</arg>
+<arg>${NUMBER_OF_ADULT}</arg>
+<arg>false</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.412" level="INFO">${text} = 1
+2
+3
+4
+5
+More</msg>
+<status status="PASS" starttime="20260220 18:47:21.382" endtime="20260220 18:47:21.412"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20260220 18:47:21.412" endtime="20260220 18:47:21.412"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.382" endtime="20260220 18:47:21.412"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:21.382" endtime="20260220 18:47:21.412"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:21.428" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:21.412" endtime="20260220 18:47:21.428"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:21.428" endtime="20260220 18:47:21.428"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.380" endtime="20260220 18:47:21.428"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.380" endtime="20260220 18:47:21.428"/>
+</kw>
+<kw name="Check Accept is Valid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20260220 18:47:21.432" level="INFO">Verifying checkbox 'class=cCdhN7' is selected.</msg>
+<status status="PASS" starttime="20260220 18:47:21.430" endtime="20260220 18:47:21.464"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.430" endtime="20260220 18:47:21.464"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:21.466" endtime="20260220 18:47:21.466"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:21.466" endtime="20260220 18:47:21.466"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:21.430" endtime="20260220 18:47:21.466"/>
+</if>
+<status status="PASS" starttime="20260220 18:47:21.430" endtime="20260220 18:47:21.466"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:21.430" endtime="20260220 18:47:21.466"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:22.476" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:47:21.466" endtime="20260220 18:47:22.476"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20260220 18:47:22.476" endtime="20260220 18:47:24.696"/>
+</kw>
+<tag>Unhappy Case</tag>
+<status status="PASS" starttime="20260220 18:47:14.778" endtime="20260220 18:47:24.696"/>
+</test>
+<test id="s1-t5" name="Verify registration form with invalid &quot;Email&quot; field" line="105">
+<kw name="Open Browser and Maximize" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260220 18:47:24.701" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:24.696" endtime="20260220 18:47:27.680"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260220 18:47:27.680" endtime="20260220 18:47:27.733"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:29.735" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:47:27.733" endtime="20260220 18:47:29.735"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:24.696" endtime="20260220 18:47:29.735"/>
+</kw>
+<kw name="Input Valid FirstName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:29.735" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
+<status status="PASS" starttime="20260220 18:47:29.735" endtime="20260220 18:47:29.849"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:29.735" endtime="20260220 18:47:29.849"/>
+</kw>
+<kw name="Input Valid LastName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:29.851" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
+<status status="PASS" starttime="20260220 18:47:29.850" endtime="20260220 18:47:29.940"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:29.850" endtime="20260220 18:47:29.940"/>
+</kw>
+<kw name="Input Valid Phone" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:29.942" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
+<status status="PASS" starttime="20260220 18:47:29.941" endtime="20260220 18:47:30.080"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:29.941" endtime="20260220 18:47:30.080"/>
+</kw>
+<kw name="Input Valid Number of Adult" library="input">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20260220 18:47:30.082" endtime="20260220 18:47:30.370"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.370" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.370" endtime="20260220 18:47:30.452"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM_BOX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20260220 18:47:30.452" endtime="20260220 18:47:30.488"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM}${NUMBER_OF_ADULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.488" level="INFO">Clicking element 'id=menuitem-2'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.488" endtime="20260220 18:47:30.566"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.081" endtime="20260220 18:47:30.566"/>
+</kw>
+<kw name="Input Note" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${NOTE_BOX}</arg>
+<arg>${NOTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.569" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.567" endtime="20260220 18:47:30.672"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.567" endtime="20260220 18:47:30.672"/>
+</kw>
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.675" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.674" endtime="20260220 18:47:30.752"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.673" endtime="20260220 18:47:30.752"/>
+</kw>
+<kw name="Click Accept" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${ACCEPT_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.758" level="INFO">Clicking element 'class=cCdhN7'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.757" endtime="20260220 18:47:30.834"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.755" endtime="20260220 18:47:30.834"/>
+</kw>
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.834" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.834" endtime="20260220 18:47:30.918"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.834" endtime="20260220 18:47:30.918"/>
+</kw>
+<kw name="Check FirstName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:30.961" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.922" endtime="20260220 18:47:30.961"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:30.981" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:30.961" endtime="20260220 18:47:30.981"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:30.981" endtime="20260220 18:47:30.981"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.922" endtime="20260220 18:47:30.981"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.922" endtime="20260220 18:47:30.981"/>
+</kw>
+<kw name="Check LastName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:31.026" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
+<status status="PASS" starttime="20260220 18:47:30.989" endtime="20260220 18:47:31.026"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:31.042" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:31.026" endtime="20260220 18:47:31.042"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:31.042" endtime="20260220 18:47:31.042"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.981" endtime="20260220 18:47:31.042"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:30.981" endtime="20260220 18:47:31.042"/>
+</kw>
+<kw name="Check Phone is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:31.058" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
+<status status="PASS" starttime="20260220 18:47:31.042" endtime="20260220 18:47:31.058"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:31.074" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:31.058" endtime="20260220 18:47:31.074"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:31.074" endtime="20260220 18:47:31.074"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.042" endtime="20260220 18:47:31.089"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.042" endtime="20260220 18:47:31.089"/>
+</kw>
+<kw name="Check Email is Invalid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${EMAIL_BOX}</arg>
+<arg>${EMPTY}</arg>
+<arg>true</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:31.118" level="INFO">Content of text field 'input_comp-lt33fcsf1' is ''.</msg>
+<status status="PASS" starttime="20260220 18:47:31.089" endtime="20260220 18:47:31.118"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:31.136" level="INFO">${result} = true</msg>
+<status status="PASS" starttime="20260220 18:47:31.120" endtime="20260220 18:47:31.136"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:31.136" endtime="20260220 18:47:31.136"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.089" endtime="20260220 18:47:31.136"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.089" endtime="20260220 18:47:31.136"/>
+</kw>
+<kw name="Check Number of Adult is Valid" library="check">
+<kw name="Dropdown Checker" library="check">
+<arg>${NUMBER_OF_ADULT_BOX}</arg>
+<arg>${NUMBER_OF_ADULT}</arg>
+<arg>false</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:31.168" level="INFO">${text} = 1
+2
+3
+4
+5
+More</msg>
+<status status="PASS" starttime="20260220 18:47:31.136" endtime="20260220 18:47:31.168"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20260220 18:47:31.168" endtime="20260220 18:47:31.168"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.136" endtime="20260220 18:47:31.168"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:31.136" endtime="20260220 18:47:31.168"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:31.183" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:31.168" endtime="20260220 18:47:31.183"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:31.183" endtime="20260220 18:47:31.189"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.136" endtime="20260220 18:47:31.189"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.136" endtime="20260220 18:47:31.189"/>
+</kw>
+<kw name="Check Accept is Valid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20260220 18:47:31.189" level="INFO">Verifying checkbox 'class=cCdhN7' is selected.</msg>
+<status status="PASS" starttime="20260220 18:47:31.189" endtime="20260220 18:47:31.215"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.189" endtime="20260220 18:47:31.215"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:31.215" endtime="20260220 18:47:31.215"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:31.215" endtime="20260220 18:47:31.215"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:31.189" endtime="20260220 18:47:31.215"/>
+</if>
+<status status="PASS" starttime="20260220 18:47:31.189" endtime="20260220 18:47:31.215"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:31.189" endtime="20260220 18:47:31.215"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:32.216" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:47:31.215" endtime="20260220 18:47:32.216"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20260220 18:47:32.216" endtime="20260220 18:47:34.450"/>
+</kw>
+<tag>Unhappy Case</tag>
+<status status="PASS" starttime="20260220 18:47:24.696" endtime="20260220 18:47:34.450"/>
+</test>
+<test id="s1-t6" name="Verify registration form with invalid &quot;Number of adults&quot; field" line="128">
+<kw name="Open Browser and Maximize" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260220 18:47:34.456" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:34.450" endtime="20260220 18:47:37.380"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260220 18:47:37.380" endtime="20260220 18:47:37.424"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:39.431" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:47:37.424" endtime="20260220 18:47:39.431"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:34.450" endtime="20260220 18:47:39.431"/>
+</kw>
+<kw name="Input Valid FirstName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:39.431" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
+<status status="PASS" starttime="20260220 18:47:39.431" endtime="20260220 18:47:39.564"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:39.431" endtime="20260220 18:47:39.564"/>
+</kw>
+<kw name="Input Valid LastName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:39.566" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
+<status status="PASS" starttime="20260220 18:47:39.565" endtime="20260220 18:47:39.690"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:39.564" endtime="20260220 18:47:39.690"/>
+</kw>
+<kw name="Input Valid Phone" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:39.694" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
+<status status="PASS" starttime="20260220 18:47:39.690" endtime="20260220 18:47:39.829"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:39.690" endtime="20260220 18:47:39.829"/>
+</kw>
+<kw name="Input Valid Email" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:39.834" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
+<status status="PASS" starttime="20260220 18:47:39.829" endtime="20260220 18:47:39.997"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:39.829" endtime="20260220 18:47:39.997"/>
+</kw>
+<kw name="Input Note" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${NOTE_BOX}</arg>
+<arg>${NOTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.001" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:47:39.999" endtime="20260220 18:47:40.113"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:39.997" endtime="20260220 18:47:40.113"/>
+</kw>
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.118" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.118" endtime="20260220 18:47:40.206"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.113" endtime="20260220 18:47:40.206"/>
+</kw>
+<kw name="Click Accept" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${ACCEPT_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.210" level="INFO">Clicking element 'class=cCdhN7'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.206" endtime="20260220 18:47:40.286"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.206" endtime="20260220 18:47:40.286"/>
+</kw>
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.286" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.286" endtime="20260220 18:47:40.373"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.286" endtime="20260220 18:47:40.373"/>
+</kw>
+<kw name="Check FirstName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:40.423" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.379" endtime="20260220 18:47:40.423"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.428" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:40.423" endtime="20260220 18:47:40.428"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:40.443" endtime="20260220 18:47:40.443"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.378" endtime="20260220 18:47:40.443"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.373" endtime="20260220 18:47:40.443"/>
+</kw>
+<kw name="Check LastName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:40.478" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.447" endtime="20260220 18:47:40.478"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.498" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:40.478" endtime="20260220 18:47:40.498"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:40.498" endtime="20260220 18:47:40.498"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.445" endtime="20260220 18:47:40.498"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.445" endtime="20260220 18:47:40.498"/>
+</kw>
+<kw name="Check Phone is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:40.522" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.498" endtime="20260220 18:47:40.522"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.538" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:40.522" endtime="20260220 18:47:40.538"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:40.538" endtime="20260220 18:47:40.538"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.498" endtime="20260220 18:47:40.554"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.498" endtime="20260220 18:47:40.554"/>
+</kw>
+<kw name="Check Email is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:40.569" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:40.556" endtime="20260220 18:47:40.569"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.601" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:40.585" endtime="20260220 18:47:40.601"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:40.601" endtime="20260220 18:47:40.601"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.556" endtime="20260220 18:47:40.601"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.556" endtime="20260220 18:47:40.601"/>
+</kw>
+<kw name="Check Number of Adult is Invalid" library="check">
+<kw name="Dropdown Checker" library="check">
+<arg>${NUMBER_OF_ADULT_BOX}</arg>
+<arg>${EMPTY}</arg>
+<arg>true</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:40.609" endtime="20260220 18:47:40.609"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:40.609" endtime="20260220 18:47:40.609"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:40.601" endtime="20260220 18:47:40.609"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:40.601" endtime="20260220 18:47:40.609"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:40.632" level="INFO">${result} = true</msg>
+<status status="PASS" starttime="20260220 18:47:40.609" endtime="20260220 18:47:40.632"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:40.632" endtime="20260220 18:47:40.632"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.601" endtime="20260220 18:47:40.635"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.601" endtime="20260220 18:47:40.635"/>
+</kw>
+<kw name="Check Accept is Valid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20260220 18:47:40.640" level="INFO">Verifying checkbox 'class=cCdhN7' is selected.</msg>
+<status status="PASS" starttime="20260220 18:47:40.640" endtime="20260220 18:47:40.664"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.638" endtime="20260220 18:47:40.664"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:40.664" endtime="20260220 18:47:40.664"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:40.664" endtime="20260220 18:47:40.664"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:40.638" endtime="20260220 18:47:40.664"/>
+</if>
+<status status="PASS" starttime="20260220 18:47:40.635" endtime="20260220 18:47:40.664"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:40.635" endtime="20260220 18:47:40.664"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:41.679" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:47:40.664" endtime="20260220 18:47:41.679"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20260220 18:47:41.679" endtime="20260220 18:47:43.925"/>
+</kw>
+<tag>Unhappy Case</tag>
+<status status="PASS" starttime="20260220 18:47:34.450" endtime="20260220 18:47:43.925"/>
+</test>
+<test id="s1-t7" name="Verify registration form with invalid &quot;Accept&quot; field" line="151">
+<kw name="Open Browser and Maximize" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260220 18:47:43.930" level="INFO">Opening browser 'Chrome' to base url 'https://panaryco.wixsite.com/myhotel?utm_source=chatgpt.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:43.925" endtime="20260220 18:47:47.393"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20260220 18:47:47.393" endtime="20260220 18:47:47.445"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:49.449" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20260220 18:47:47.445" endtime="20260220 18:47:49.449"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:43.925" endtime="20260220 18:47:49.449"/>
+</kw>
+<kw name="Input Valid FirstName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:49.453" level="INFO">Typing text 'John' into text field 'id=input_comp-lt33fcq41'.</msg>
+<status status="PASS" starttime="20260220 18:47:49.451" endtime="20260220 18:47:49.596"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:49.449" endtime="20260220 18:47:49.596"/>
+</kw>
+<kw name="Input Valid LastName" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:49.598" level="INFO">Typing text 'Smith' into text field 'id=input_comp-lt33fcs1'.</msg>
+<status status="PASS" starttime="20260220 18:47:49.597" endtime="20260220 18:47:49.709"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:49.596" endtime="20260220 18:47:49.709"/>
+</kw>
+<kw name="Input Valid Phone" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:49.709" level="INFO">Typing text '123-456-7890' into text field 'id=input_comp-lt33fcsi1'.</msg>
+<status status="PASS" starttime="20260220 18:47:49.709" endtime="20260220 18:47:49.838"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:49.709" endtime="20260220 18:47:49.838"/>
+</kw>
+<kw name="Input Valid Email" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:49.840" level="INFO">Typing text 'john.smith@example.com' into text field 'id=input_comp-lt33fcsf1'.</msg>
+<status status="PASS" starttime="20260220 18:47:49.838" endtime="20260220 18:47:49.987"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:49.838" endtime="20260220 18:47:49.987"/>
+</kw>
+<kw name="Input Valid Number of Adult" library="input">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20260220 18:47:49.989" endtime="20260220 18:47:50.280"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.280" level="INFO">Clicking element 'id=collection_comp-lt33fcsl1'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.280" endtime="20260220 18:47:50.372"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM_BOX}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20260220 18:47:50.372" endtime="20260220 18:47:50.399"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=${MENU_ITEM}${NUMBER_OF_ADULT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.400" level="INFO">Clicking element 'id=menuitem-2'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.400" endtime="20260220 18:47:50.477"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:49.988" endtime="20260220 18:47:50.477"/>
+</kw>
+<kw name="Input Note" library="input">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=${NOTE_BOX}</arg>
+<arg>${NOTE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.477" level="INFO">Typing text 'None' into text field 'id=input_comp-lt33fct3'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.477" endtime="20260220 18:47:50.586"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.477" endtime="20260220 18:47:50.586"/>
+</kw>
+<kw name="Click Pet Yes" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.592" level="INFO">Clicking element '//*[@id="comp-ltubl4ab"]/fieldset/div/label[1]/div[1]'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.586" endtime="20260220 18:47:50.673"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.586" endtime="20260220 18:47:50.673"/>
+</kw>
+<kw name="Click Submit Button" library="input">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class=${SUBMIT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.676" level="INFO">Clicking element 'class=comp-lt33fctj'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.676" endtime="20260220 18:47:50.751"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.675" endtime="20260220 18:47:50.751"/>
+</kw>
+<kw name="Check FirstName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${FNAME_BOX}</arg>
+<arg>${FIRSTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:50.797" level="INFO">Content of text field 'input_comp-lt33fcq41' is 'John'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.758" endtime="20260220 18:47:50.797"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.818" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:50.798" endtime="20260220 18:47:50.818"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:50.818" endtime="20260220 18:47:50.818"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.751" endtime="20260220 18:47:50.818"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.751" endtime="20260220 18:47:50.818"/>
+</kw>
+<kw name="Check LastName is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${LNAME_BOX}</arg>
+<arg>${LASTNAME}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:50.855" level="INFO">Content of text field 'input_comp-lt33fcs1' is 'Smith'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.823" endtime="20260220 18:47:50.855"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.871" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:50.855" endtime="20260220 18:47:50.871"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:50.871" endtime="20260220 18:47:50.871"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.818" endtime="20260220 18:47:50.871"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.818" endtime="20260220 18:47:50.871"/>
+</kw>
+<kw name="Check Phone is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${PHONE_BOX}</arg>
+<arg>${PHONE}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:50.887" level="INFO">Content of text field 'input_comp-lt33fcsi1' is '123-456-7890'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.871" endtime="20260220 18:47:50.887"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.910" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:50.887" endtime="20260220 18:47:50.910"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:50.910" endtime="20260220 18:47:50.910"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.871" endtime="20260220 18:47:50.910"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.871" endtime="20260220 18:47:50.910"/>
+</kw>
+<kw name="Check Email is Valid" library="check">
+<kw name="Text Checker" library="check">
+<arg>${EMAIL_BOX}</arg>
+<arg>${EMAIL}</arg>
+<arg>false</arg>
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20260220 18:47:50.934" level="INFO">Content of text field 'input_comp-lt33fcsf1' is 'john.smith@example.com'.</msg>
+<status status="PASS" starttime="20260220 18:47:50.910" endtime="20260220 18:47:50.934"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${locator}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.950" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:50.934" endtime="20260220 18:47:50.950"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:50.950" endtime="20260220 18:47:50.950"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.910" endtime="20260220 18:47:50.950"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.910" endtime="20260220 18:47:50.950"/>
+</kw>
+<kw name="Check Number of Adult is Valid" library="check">
+<kw name="Dropdown Checker" library="check">
+<arg>${NUMBER_OF_ADULT_BOX}</arg>
+<arg>${NUMBER_OF_ADULT}</arg>
+<arg>false</arg>
+<if>
+<branch type="IF" condition="'${value}' != '${EMPTY}'">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${text}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.982" level="INFO">${text} = 1
+2
+3
+4
+5
+More</msg>
+<status status="PASS" starttime="20260220 18:47:50.950" endtime="20260220 18:47:50.982"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${text}</arg>
+<arg>${value}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20260220 18:47:50.982" endtime="20260220 18:47:50.982"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.950" endtime="20260220 18:47:50.982"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:50.950" endtime="20260220 18:47:50.982"/>
+</if>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>id=${NUMBER_OF_ADULT_BOX}</arg>
+<arg>aria-invalid</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20260220 18:47:50.998" level="INFO">${result} = false</msg>
+<status status="PASS" starttime="20260220 18:47:50.982" endtime="20260220 18:47:50.998"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_status}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20260220 18:47:50.998" endtime="20260220 18:47:50.998"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.950" endtime="20260220 18:47:50.998"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.950" endtime="20260220 18:47:50.998"/>
+</kw>
+<kw name="Check Accept is Invalid" library="check">
+<kw name="Checkbox Checker" library="check">
+<arg>${ACCEPT_CHECKBOX}</arg>
+<arg>not_checked</arg>
+<if>
+<branch type="IF" condition="'${status}' == 'checked'">
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20260220 18:47:50.998" endtime="20260220 18:47:50.998"/>
+</kw>
+<status status="NOT RUN" starttime="20260220 18:47:50.998" endtime="20260220 18:47:50.998"/>
+</branch>
+<branch type="ELSE IF" condition="'${status}' == 'not_checked'">
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>class=${locator}</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20260220 18:47:51.010" level="INFO">Verifying checkbox 'class=cCdhN7' is not selected.</msg>
+<status status="PASS" starttime="20260220 18:47:50.998" endtime="20260220 18:47:51.046"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.998" endtime="20260220 18:47:51.046"/>
+</branch>
+<status status="PASS" starttime="20260220 18:47:50.998" endtime="20260220 18:47:51.046"/>
+</if>
+<status status="PASS" starttime="20260220 18:47:50.998" endtime="20260220 18:47:51.046"/>
+</kw>
+<status status="PASS" starttime="20260220 18:47:50.998" endtime="20260220 18:47:51.046"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20260220 18:47:52.058" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20260220 18:47:51.046" endtime="20260220 18:47:52.058"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20260220 18:47:52.058" endtime="20260220 18:47:54.267"/>
+</kw>
+<tag>Unhappy Case</tag>
+<status status="PASS" starttime="20260220 18:47:43.925" endtime="20260220 18:47:54.267"/>
+</test>
+<status status="PASS" starttime="20260220 18:46:44.311" endtime="20260220 18:47:54.267"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">Happy Case</stat>
+<stat pass="1" fail="0" skip="0">Happy Case</stat>
+<stat pass="6" fail="0" skip="0">Unhappy Case</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="7" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
 </suite>
 </statistics>
 <errors>
