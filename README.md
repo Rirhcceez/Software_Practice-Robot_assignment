@@ -42,7 +42,7 @@ robot -d results tests/testcase.robot
 You can use tags to run specific groups of tests:
  - Run only the Happy Path:
     ```bash
-    robot -d results tests/testcase.robot
+    robot -d results -i "Happy Case" tests/testcase.robot
     ```
  - Run only the Negative Tests:
     ```bash
