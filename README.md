@@ -30,3 +30,21 @@ Make sure you have Python installed, then install the required libraries:
 ```bash
 pip install robotframework
 pip install robotframework-seleniumlibrary
+```
+
+**Execution Command**
+To run the entire test suite and generate the reports inside the results folder, open your terminal at the root of the project and execute:
+```bash
+robot -d results tests/testcase.robot
+```
+
+**Running Specific Test Cases**
+You can use tags to run specific groups of tests:
+ - Run only the Happy Path:
+    ```bash
+    robot -d results tests/testcase.robot
+    ```
+ - Run only the Negative Tests:
+    ```bash
+    robot -d results -i "Unhappy Case" tests/testcase.robot
+    ```
